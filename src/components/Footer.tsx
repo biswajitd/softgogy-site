@@ -94,18 +94,18 @@ const Footer = () => {
             </ul>
             
             <div className="space-y-2">
-              <div className="flex items-center space-x-2 text-sm">
-                <Mail className="h-4 w-4 text-accent" />
-                <span className="text-primary-foreground/80">support@softgogy.com</span>
-              </div>
-              <div className="flex items-center space-x-2 text-sm">
-                <Phone className="h-4 w-4 text-accent" />
-                <span className="text-primary-foreground/80">+91 98765 43210</span>
-              </div>
-              <div className="flex items-center space-x-2 text-sm">
-                <MapPin className="h-4 w-4 text-accent" />
-                <span className="text-primary-foreground/80">Bangalore, India</span>
-              </div>
+               <div className="flex items-center space-x-2 text-sm">
+                 <Mail className="h-4 w-4 text-accent" />
+                 <span className="text-primary-foreground/80">biswajit@softgogy.com</span>
+               </div>
+               <div className="flex items-center space-x-2 text-sm">
+                 <Phone className="h-4 w-4 text-accent" />
+                 <span className="text-primary-foreground/80">+91 98300 46647</span>
+               </div>
+               <div className="flex items-center space-x-2 text-sm">
+                 <MapPin className="h-4 w-4 text-accent" />
+                 <span className="text-primary-foreground/80">Kolkata, India</span>
+               </div>
             </div>
           </div>
         </div>

@@ -135,7 +135,9 @@ const Community = () => {
                   <p className="text-muted-foreground text-sm mb-3">{channel.description}</p>
                   <div className="flex items-center justify-between">
                     <Badge variant="secondary" className="text-xs">{channel.members}</Badge>
-                    <Button size="sm">Join Channel</Button>
+                    <Link to="/channel-details">
+                      <Button size="sm">Join Channel</Button>
+                    </Link>
                   </div>
                 </CardContent>
               </Card>
@@ -164,7 +166,9 @@ const Community = () => {
                   <p className="text-sm text-muted-foreground mb-4">
                     {event.participants} participants expected
                   </p>
-                  <Button className="w-full">Join Event</Button>
+                  <Link to="/event-details">
+                    <Button className="w-full">Join Event</Button>
+                  </Link>
                 </CardContent>
               </Card>
             ))}
@@ -214,7 +218,13 @@ const Community = () => {
                 />
               </div>
               
-              <Button className="w-full" size="lg">
+              <Button 
+                className="w-full" 
+                size="lg"
+                onClick={() => {
+                  alert("Succeeded, we will contact you soon.");
+                }}
+              >
                 Join Community Now
                 <Users className="ml-2 h-5 w-5" />
               </Button>

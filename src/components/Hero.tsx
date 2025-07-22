@@ -44,15 +44,14 @@ const Hero = () => {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
-              <Link to="/courses">
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-                >
-                  Explore All Courses
-                </Button>
-              </Link>
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+                onClick={() => alert("Under development")}
+              >
+                Start Chart
+              </Button>
             </div>
 
             {/* Stats */}

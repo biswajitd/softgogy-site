@@ -14,6 +14,9 @@ import Contact from "./pages/Contact";
 import EnrollmentForm from "./pages/EnrollmentForm";
 import Community from "./pages/Community";
 import Courses from "./pages/Courses";
+import ChannelDetails from "./pages/ChannelDetails";
+import EventDetails from "./pages/EventDetails";
+import AndroidDevelopment from "./pages/AndroidDevelopment";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +38,9 @@ const App = () => (
           <Route path="/enrollment" element={<EnrollmentForm />} />
           <Route path="/community" element={<Community />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/channel-details" element={<ChannelDetails />} />
+          <Route path="/event-details" element={<EventDetails />} />
+          <Route path="/android-development" element={<AndroidDevelopment />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

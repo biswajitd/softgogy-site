@@ -22,7 +22,11 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <GraduationCap className="h-8 w-8 text-primary" />
+            <img 
+              src="/lovable-uploads/a72ef66d-3325-47cf-9b58-66f4e18eb02d.png" 
+              alt="SoftGogy Logo" 
+              className="h-8 w-8"
+            />
             <span className="text-xl font-bold text-primary">SoftGogy</span>
           </div>
 
