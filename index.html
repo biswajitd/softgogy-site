@@ -1,24 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SoftGogy - Free Education for Marginalized Students</title>
-    <meta name="description" content="SoftGogy provides completely free engineering education, software development training, and trading insights for marginalized students across India. Join thousands of students transforming their lives." />
-    <meta name="author" content="SoftGogy" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SoftGogy - Empower Learners</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    a.button {
+      display: inline-block;
+      margin: 10px 0;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to SoftGogy Empower Learners Hub</h1>
+    <p>This site is now live on GitHub Pages with working features:</p>
+    <ul>
+      <li><a class="button" href="android-development.html">View All Android Development</a></li>
+      <li><a class="button" href="assets/downloads/syllabus-modern.pdf" download>Download Syllabus</a></li>
+      <li><a class="button" href="#" onclick="alert('Join the discussion with like-minded learners on our exclusive forum!')">Join Discussion</a></li>
+    </ul>
 
-    <meta property="og:title" content="SoftGogy - Free Education for Marginalized Students" />
-    <meta property="og:description" content="Empowering marginalized students with free access to engineering education, software development, and trading courses across India." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <form id="community-form">
+      <h3>Join Community Now</h3>
+      <input type="text" id="name" placeholder="Your Name" required style="display:block;margin-bottom:10px;" />
+      <input type="email" id="email" placeholder="Your Email" required style="display:block;margin-bottom:10px;" />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
-
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <script>
+    document.getElementById('community-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      if (!name || !email) {
+        alert("Please fill out the form correctly.");
+      } else {
+        alert("Succeeded, we will contact you soon.");
+        this.reset();
+      }
+    });
+  </script>
+</body>
 </html>
